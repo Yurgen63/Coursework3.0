@@ -9,5 +9,7 @@ import java.util.List;
 public interface NotificationTaskRepository extends JpaRepository<NotificationTask, Long> {
 
     List<NotificationTask> findAllBySendAtBefore(LocalDateTime now);
+
+    List<NotificationTask> findAllBySendAt(LocalDateTime sendAt);
 }
 

@@ -17,11 +17,11 @@ public class NotificationTaskService {
 
     private static final Logger logger = LoggerFactory.getLogger(NotificationTaskService.class);
 
-    /** Паттерн для распознавания даты+времени и текста в сообщении. */
+    // Паттерн для распознавания даты+времени и текста в сообщении.
     private static final Pattern MESSAGE_PATTERN =
             Pattern.compile("(\\d{2}\\.\\d{2}\\.\\d{4}\\s\\d{2}:\\d{2})(\\s+)(.+)");
 
-    /** Формат даты+времени во входящем сообщении. */
+    // Формат даты+времени во входящем сообщении.
     private static final DateTimeFormatter DATE_TIME_FORMATTER =
             DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm");
 
